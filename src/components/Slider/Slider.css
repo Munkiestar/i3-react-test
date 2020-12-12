@@ -1,0 +1,46 @@
+.img-container {
+  width: 250px;
+  height: 250px;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-slider {
+  max-width: 70vw;
+  margin: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: teal !important;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+}
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+}
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}
