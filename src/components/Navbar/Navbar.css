@@ -43,6 +43,7 @@
   display: flex;
   align-items: center;
   height: 5rem;
+  z-index: 2000;
 }
 
 .nav-links {
@@ -87,11 +88,17 @@
   }
 
   .nav-menu.active {
+    height: 100vh;
     background: #242222;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
   }
 
   .nav-links {
@@ -99,7 +106,6 @@
     text-align: center;
     padding: 2rem;
     width: 100%;
-    display: table;
   }
 
   .nav-links:hover {

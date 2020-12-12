@@ -1,0 +1,112 @@
+.about {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about p {
+  margin: 0.4rem auto;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.aside-right,
+.aside-left {
+  height: auto;
+}
+
+.aside-right img {
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  background-position: cover;
+}
+
+.react-reveal {
+  margin-top: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.container-item {
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-item i,
+.container-item h2,
+.container-item p {
+  margin: 0.8rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .aside-right {
+    grid-row: 1;
+  }
+
+  .aside-left {
+    grid-row: 2;
+  }
+
+  .aside-right img {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .container-item {
+    width: 100%;
+  }
+
+  .container-item:last-child {
+    grid-column: span 3;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about {
+    width: 100%;
+  }
+
+  .about p {
+    padding: 1.3rem;
+  }
+
+  .wrapper {
+    gap: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-column: none;
+    gap: 0.3rem;
+  }
+  .container-item {
+    grid-column: span 2;
+    margin: 1.8rem 0;
+  }
+}

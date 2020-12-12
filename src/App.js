@@ -5,7 +5,7 @@ import './App.css';
 
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/pages/Home/Home';
-import AboutUs from './components/pages/AboutUs';
+import AboutUs from './components/pages/About/AboutUs';
 import Services from './components/pages/Services';
 import Development from './components/pages/Delevlopment';
 import Design from './components/pages/Design';

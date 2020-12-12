@@ -8,32 +8,32 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const photos = [
   {
-    name: '',
+    name: 'Ash',
     url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSwZLn-46RlLzKpoxTLjtSDt9c9mhDda9WA&usqp=CAU',
   },
   {
-    name: '',
+    name: 'Bobby',
     url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xdoL92qz3QMNBxpYUeN-obEdFwc6gRb0jA&usqp=CAU',
   },
   {
-    name: '',
+    name: 'KC',
     url:
       'https://images-na.ssl-images-amazon.com/images/I/51bHF4fRVmL._AC_SX466_.jpg',
   },
   {
-    name: '',
+    name: 'Dan',
     url:
-      'https://www.ochelper.com/wp-content/uploads/2020/02/Orange-County-Events-Bring-You-The-Best-Comedy-Show-With-Well-known-Comedian-T.J.-Miller.jpg',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEwageEH3PvGYTiqtCFHf1y8xIN0JD4sFYQ&usqp=CAU',
   },
   {
-    name: '',
+    name: 'Becky',
     url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgy-n84UGpPC0ARnskAkMvJVlvcZxHvbhWLvdkM5zr1k6UCTNVmtE-RFqShiXILhEVJXU5sK-v13CsxngGEfum1k_DGOenxC84sg&usqp=CAU&ec=45750089',
   },
   {
-    name: '',
+    name: 'Steve',
     url:
       'https://variety.com/wp-content/uploads/2018/03/silicon-valley.jpg?w=1000',
   },
@@ -45,27 +45,16 @@ function ImgSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 4,
+    slidesToScroll: 2,
     initialSlide: 0,
     lazyLoad: true,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-          lazyLoad: true,
-        },
-      },
       {
         breakpoint: 960,
         settings: {
           slidesToShow: 2,
           infinite: true,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
           lazyLoad: true,
         },
       },
@@ -80,12 +69,13 @@ function ImgSlider() {
       },
     ],
   };
+
   return (
     <Slider {...settings}>
       {photos.map((photo, indx) => {
         return (
           <div key={indx} className="img-container">
-            <img src={photo.url} alt="" />
+            <img src={photo.url} alt={photo.name} />
           </div>
         );
       })}

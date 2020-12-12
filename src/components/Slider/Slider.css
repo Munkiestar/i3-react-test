@@ -1,12 +1,14 @@
 .img-container {
-  width: 250px;
-  height: 250px;
-  padding: 1rem;
+  width: 15.625rem;
+  height: 13.625rem;
+  padding: 0.4rem;
 }
 
 img {
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .slick-slider {
